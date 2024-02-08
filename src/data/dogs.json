@@ -1,0 +1,10 @@
+{
+    "dogs": [
+        {
+            "cover": "/dogs/dog1/coverimage.png",
+            "title": "Benny",
+            "description": "Benny is a playful sweetheart who needs lots of love.",
+            "price": "$500"
+        }
+    ]
+}

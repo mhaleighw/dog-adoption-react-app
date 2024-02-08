@@ -1,0 +1,37 @@
+.container.about-page {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 120px; /* Increase padding to move the text further down */
+  }
+  
+  .text-zone {
+    text-align: center;
+    margin-bottom: 20px; /* Add spacing below the text zone */
+  }
+  
+  .text-zone h1 {
+    font-size: 30px; /* Adjust the font size as needed */
+    margin-bottom: 13px; /* Add spacing below the heading */
+  }
+  
+  .text-zone p {
+    font-size: 18px; /* Adjust the font size as needed */
+    line-height: 1.5; /* Adjust the line height for better readability */
+    margin-bottom: 20px; /* Add spacing between paragraphs */
+    max-width: 600px; /* Limit the width of the paragraphs */
+    padding: 15px; /* Add padding around the paragraphs */
+    margin: 0 auto; /* Center the paragraphs */
+    
+    
+  }
+  .text-zone p:hover,
+.text-zone h1:hover {
+  transform: scale(1.05); /* Increase scale on hover */
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+  

@@ -1,65 +1,41 @@
-.adoption-page {
-    padding: 20px;
-}
-
-.page-title {
+.container {
+    text-align: center; /* Center align the content */
+  }
+  
+  .page-title {
     font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.dogs-container {
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
+  .images-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-}
-
-.dog-card {
-    width: calc(33.33% - 20px); /* Adjust as needed */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.dog-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-bottom: 1px solid #ccc; /* Add a border if needed */
-}
-
-.dog-info {
-    padding: 10px;
-}
-
-.dog-name {
-    font-size: 18px;
+    justify-content: center;
+  }
+  
+  .image-box {
+    width: 250px; /* Adjust as needed */
+    margin: 20px; /* Adjust spacing between components */
+  }
+  
+  .dog-image {
+    width: 100px; /* Adjust size of the dog image */
+    height: 100px; /* Adjust size of the dog image */
+    float: left;
+    margin-right: 10px; /* Adjust spacing between image and text */
+  }
+  
+  .title {
     font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-.dog-description {
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.dog-price {
-    font-size: 16px;
+  }
+  
+  .description {
+    margin-top: 5px; /* Adjust spacing */
+  }
+  
+  .price {
+    margin-top: 5px; /* Adjust spacing */
     font-weight: bold;
-    color: #3b7bd4;
-}
-
-.btn {
-    padding: 5px 10px;
-    background-color: #3b7bd4;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn:hover {
-    background-color: #235592;
-}
+    color: #3b7bd4; /* Adjust color */
+  }
+  

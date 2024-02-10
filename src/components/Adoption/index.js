@@ -1,29 +1,59 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Loader from 'react-loaders';
+import AnimatedLetters from "../AnimatedLetters";
+import './index.scss';
 import dogsData from '../../data/dogs.json';
 
 const Adoption = () => {
-    return (
-        <div className="container adoption-page">
-            <h1 className="page-title">Adoptable Dogs</h1>
-            <div className="dogs-container">
-                {dogsData.dogs.map((dog, idx) => (
-                    <div className="dog-card" key={idx}>
-                        <img 
-                            src={dog.cover}
-                            className="dog-image"
-                            alt={dog.title}
-                        />
-                        <div className="dog-info">
-                            <h2 className="dog-name">{dog.title}</h2>
-                            <p className="dog-description">{dog.description}</p>
-                            <p className="dog-price">Price: {dog.price}</p>
-                            <button className="btn" onClick={() => window.open(dog.url)}>View</button>
-                        </div>
-                    </div>
-                ))}
+    const [letterClass, setLetterClass] = useState('text-animate');
+
+    useEffect(() => {
+        const idTimeOut = setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 3000)
+        return () => clearTimeout(idTimeOut);
+    }, [])
+
+    const renderAdoption = (dogs) => {
+        return (
+            <div className="images-container">
+                {
+                    dogs.map((dog, idx) => {
+                        return (
+                            <div className="image-box" key={idx}>
+                                <img 
+                                    src={dog.cover}
+                                    className="dog-image"
+                                    alt="dog"
+                                />
+                                <div className="content">
+                                    <p className="title">{dog.title}</p>
+                                    <h4 className="description">{dog.description}</h4>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
             </div>
-        </div>
-    );
-};
+        );
+    }    
+
+return (
+    <>
+        <div className="container adoption-page">
+            <h1 className="page-title">
+                <AnimatedLetters
+                letterClass={letterClass}
+                strArray={"Adopt a Frenchie!".split("")}
+                idx={10}
+            />
+        </h1>
+        <div>{renderAdoption(dogsData.dogs)}</div>
+    </div>
+    <Loader type="pacman" />
+</>
+);
+}
 
 export default Adoption;
+

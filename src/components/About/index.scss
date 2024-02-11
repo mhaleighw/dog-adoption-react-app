@@ -1,37 +1,48 @@
-.container.about-page {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 120px; 
+.container {
+  .adoption-page {
+      .images-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+          
+          .image-box {
+              .dog-info {
+                  display: flex;
+                  align-items: center;
+                  gap: 20px;
+                  
+                  .dog-image {
+                      width: 200px;
+                      height: 200px;
+                      object-fit: cover;
+                      border-radius: 50%;
+                  }
+                  
+                  .content {
+                      flex: 1;
+                      
+                      .title {
+                          font-size: 24px;
+                          font-weight: bold;
+                      }
+                      
+                      .age {
+                          font-size: 18px;
+                      }
+                      
+                      .description {
+                          font-size: 16px;
+                      }
+                      
+                      .price {
+                          font-size: 20px;
+                          font-weight: bold;
+                          color: #4CAF50; // Green color for price
+                      }
+                  }
+              }
+          }
+      }
   }
-  
-  .text-zone {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .text-zone h1 {
-    font-size: 30px;
-    margin-bottom: 13px; 
-  }
-  
-  .text-zone p {
-    font-size: 18px; 
-    line-height: 1.5; 
-    margin-bottom: 20px; 
-    max-width: 600px; 
-    padding: 15px; 
-    margin: 0 auto;
-    
-    
-  }
-  .text-zone p:hover,
-.text-zone h1:hover {
-  transform: scale(1.05); 
-  transition: transform 0.3s ease; 
 }
-  

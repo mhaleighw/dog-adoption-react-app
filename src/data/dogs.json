@@ -3,6 +3,7 @@
         {
             "cover": "/dogs/dog1/coverimage.png",
             "title": "Benny",
+            "age": "5 years old",
             "description": "Benny is a grey blue sweetheart who loves to cuddle.",
             "price": "$450"
         }

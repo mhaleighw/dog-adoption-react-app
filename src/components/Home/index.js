@@ -11,7 +11,7 @@ const Home = () => {
           <br>
           </br>
           <Link to="/contact" className="flat-button">
-            CONTACT FOR ADOPTION
+            CONTACT
           </Link>
           <br />
           <br>
@@ -25,7 +25,7 @@ const Home = () => {
           <br>
           </br>
           <Link to="/adoption" className="flat-button">
-            CHECK OUT OUR DOGS
+            ADOPTION
           </Link>
         </div>
       </div>

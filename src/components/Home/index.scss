@@ -6,7 +6,7 @@
 }
 
 .text-zone {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial;
   text-align: center; 
   margin-bottom: 30px; 
 }
@@ -21,23 +21,6 @@
   margin-bottom: 30px; 
 }
 
-.flat-button {
-  color: #150703;
-  font-size: 16px; 
-  font-weight: bold;
-  letter-spacing: 4px;
-  text-decoration: none;
-  padding: 15px 25px;
-  border: 2px solid #010517;
-  white-space: nowrap;
-  transition: background-color 0.3s, color 0.3s;
-  margin-bottom: 70px; 
-}
-
-.flat-button:hover {
-  background: #ecdb9f;
-  color: #333;
-}
 
 .text-zone p {
   &:nth-of-type(1) {

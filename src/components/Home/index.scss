@@ -1,29 +1,29 @@
 .container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Decrease the height slightly */
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
 }
 
 .text-zone {
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center; /* Center the content horizontally */
-  margin-bottom: 30px; /* Decrease the margin below the text zone */
+  text-align: center; 
+  margin-bottom: 30px; 
 }
 
 .text-zone h2 {
-  font-size: 30px; /* Adjust font size as needed */
-  margin-bottom: 5px; /* Add space between heading and paragraph */
+  font-size: 30px; 
+  margin-bottom: 5px; 
 }
 
 .text-zone p {
-  font-size: 20px; /* Adjust font size as needed */
-  margin-bottom: 30px; /* Decrease the margin between elements */
+  font-size: 20px; 
+  margin-bottom: 30px; 
 }
 
 .flat-button {
   color: #150703;
-  font-size: 16px; /* Adjust font size as needed */
+  font-size: 16px; 
   font-weight: bold;
   letter-spacing: 4px;
   text-decoration: none;
@@ -31,11 +31,11 @@
   border: 2px solid #010517;
   white-space: nowrap;
   transition: background-color 0.3s, color 0.3s;
-  margin-bottom: 70px; /* Adjust top margin */
+  margin-bottom: 70px; 
 }
 
 .flat-button:hover {
-  background: #E27D60;
+  background: #ecdb9f;
   color: #333;
 }
 

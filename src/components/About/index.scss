@@ -1,48 +1,26 @@
 .container {
-  .adoption-page {
-      .images-container {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 20px;
-          
-          .image-box {
-              .dog-info {
-                  display: flex;
-                  align-items: center;
-                  gap: 20px;
-                  
-                  .dog-image {
-                      width: 200px;
-                      height: 200px;
-                      object-fit: cover;
-                      border-radius: 50%;
-                  }
-                  
-                  .content {
-                      flex: 1;
-                      
-                      .title {
-                          font-size: 24px;
-                          font-weight: bold;
-                      }
-                      
-                      .age {
-                          font-size: 18px;
-                      }
-                      
-                      .description {
-                          font-size: 16px;
-                      }
-                      
-                      .price {
-                          font-size: 20px;
-                          font-weight: bold;
-                          color: #4CAF50; // Green color for price
-                      }
-                  }
-              }
-          }
-      }
-  }
+    &.about-page {
+        .text-zone {
+            padding-left: 20px;
+        }
+
+        .our-story {
+            font-size: 48px;
+            margin-bottom: 20px; 
+            position: relative; 
+            left: -20px; 
+            animation: slideInLeft 0.5s ease; 
+        }
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

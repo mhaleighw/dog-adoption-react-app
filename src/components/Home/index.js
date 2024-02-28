@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './index.scss';
 
 const Home = () => {
@@ -6,27 +5,7 @@ const Home = () => {
     <>
       <div className="container home-page">
         <div className="text-zone">
-          <h2>Interested in adopting a dog?</h2>
-          <p>French Bull Dog Puppies</p>
-          <br>
-          </br>
-          <Link to="/contact" className="flat-button">
-            CONTACT
-          </Link>
-          <br />
-          <br>
-          </br>
-          <br>
-          </br>
-          <br>
-          </br>
-          <br>
-          </br>
-          <br>
-          </br>
-          <Link to="/adoption" className="flat-button">
-            ADOPTION
-          </Link>
+
         </div>
       </div>
     </>

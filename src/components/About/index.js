@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div className='container about-page'>
             <div className='text-zone'>
-                <h1>
+                <h1 className="our-story">
                     <AnimatedLetters
                         letterClass="text-animate"
                         strArray={"Our Story".split("")}

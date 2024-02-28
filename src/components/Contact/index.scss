@@ -1,0 +1,19 @@
+.container {
+    &.contact-page {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start; 
+
+        height: 100vh; 
+
+        .text-zone {
+            padding-left: 20px; 
+            margin-top: 50px; 
+        }
+
+        h1 {
+            font-size: 45px; 
+            font-weight: bold; 
+        }
+    }
+}
